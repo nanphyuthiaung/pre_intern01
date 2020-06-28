@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Testing Javascript</title>
+        <script>
+           document.addEventListener('DOMContentLoaded',() =>{
+                var select=document.querySelector('#color_change');
+                    select.onchange= () =>{
+                        document.querySelector('#hello').style.color=select.value;
+                    };
+                
+            });
+        </script>
+    </head>
+    <body>
+        <h1 id="hello">Hello! Welcome to Our PreIntern Group.</h1>
+        <select id="color_change">
+            <option value="black" >Black</option>
+            <option value="red" >Red</option>
+            <option value="blue" >Blue</option>
+            <option value="green" >Green</option>
+        </select>
+    </body>
+</html>
